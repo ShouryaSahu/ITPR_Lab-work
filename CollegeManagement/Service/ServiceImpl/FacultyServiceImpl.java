@@ -11,10 +11,11 @@ private FacultyDAO facultyDAO;
 	
 	//constructor 
 
-	public FacultyServiceImpl() {
+		public FacultyServiceImpl() {
 		//to intialize DAO reference
-		facultyDAO = new FacultyDAO();
-	}
+		facultyDAO = new FacultyDAOImpl();
+		}
+	
 	
 	@Override
 	public void registerFaculty(Faculty faculty) 
